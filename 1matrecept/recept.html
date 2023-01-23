@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./cssfil.css">
+</head>
+<body>
+    <div id="flex">
+        <header id="header">
+            <img src="./img/facebook_profile_image.png" alt="logo">  
+            <a class="headerText fontSizeIncreaseBig" href="./recept.html">Hem</a>
+            <a class="headerText fontSizeIncreaseBig" href="./syfte.html">Mitt Syfte</a>
+            <h1><button class="button" id="btnToggle">Byt mellan dator och mobil layout här!</button></h1>         
+        </header>
+        <div>
+            <main class="bodyLaptop">
+                <div class="vänsterSida changeColor">
+                    <h1 class="miniTitle fontChange">Ingredienser</h1>
+                    <nav class="changeColor">
+                        <a class="miniTitle fontChange fontSizeIncrease" href="https://www.mathem.se/">Köp ingredienser här!</a>
+                    </nav>
+                    <ul class="fontChange fontSizeIncrease">
+                    <h3 class="miniTitle">GRÖNSAKER</h3>
+                        <li>2 aubergine</li> 
+                        <li>6 tomater</li>
+                        <li>2 squash</li>
+                        <li>2 zucchinis</li>
+                    <h3 class="miniTitle">SÅS</h3>
+                        <li>2 msk olivolja</li>
+                        <li>1 lök, tärnad</li>
+                        <li>4 klyftor vitlök, mald</li>
+                        <li>1 röd paprika, tärnad</li>
+                        <li>1 gul papper, tärnad</li>
+                        <li>salt, smaksätt själv</li>
+                        <li>pepper, smaksätt själv</li>
+                        <li>795g krossade tomater i burk</li>
+                        <li>2 msk hackad färsk basilika, från 8-10 blad</li>
+                    <h3 class="miniTitle">ÖRTKRYDDA</h3>
+                        <li>2 msk hackad färsk basilika, från 8-10 blad</li>
+                        <li>1 tsk vitlök, mald</li>
+                        <li>2 msk hackad färsk persilja</li>
+                        <li>2 tsk fräsh timjan</li>
+                        <li>4 msk olivolja</li>
+                        <li>salt, smaksätt själv</li>
+                        <li>pepper, smaksätt själv</li>
+                    </ul>
+                </div>
+                <div class="changeColor">
+                    <h2  class="fontChange miniTitle">Instruktioner</h2>
+                    <ul class="fontChange changeToNumber fontSizeIncreaseBig">
+                        <li>Sätt ugnen till 195*c</li>
+                        <li>Skiva aubergine, tomater, squash och zucchini i cirka 1 mm skivor och ställ sedan åt sidan.</li>
+                        <li>Gör såsen: Värm olivoljan i en 30 cm ugnssäker panna på medelhög värme. Fräs lök, vitlök och paprika tills de är mjuka, cirka 10 minuter. Smaka av med salt och peppar, tillsätt sedan de krossade tomaterna. Rör om tills ingredienserna är helt införlivade. Ta av från värmen och tillsätt sedan basilikan. Rör om en gång till och jämna sedan till ytan på såsen med en spatel.</li>
+                        <li>Ordna de skivade grönsakerna i omväxlande mönster (till exempel aubergine, tomat, squash, zucchini) ovanpå såsen från ytterkanten till mitten av pannan. Krydda med salt och peppar.</li>
+                        <li>Gör örtkryddan: Blanda basilika, vitlök, persilja, timjan, salt, peppar och olivolja i en liten skål. Häll örtkryddan över grönsakerna.</li>
+                        <li>Täck formen med folie och grädda i 40 minuter. Avtäck och grädda sedan i ytterligare 20 minuter tills grönsakerna är mjuka.</li>
+                        <li>Servera medan den är varm som huvudrätt eller tillbehör. Ratatouillen är också utmärkt nästa dag - täck med folie och värm i en 180˚C ugn i 15 minuter, eller helt enkelt mikrovågsugn till önskad temperatur.</li>
+                        <li>Njut!</li>
+                    </ul>
+                </div>
+                <div class="fontChange changeColor högerSida">
+                    <h1 class="fontChange miniTitle">Ratatouille</h1>
+                    <img src="./img/ratatouille.jpeg" alt="">
+                    <h2 class="miniTitle">Näring</h2>
+                    <ul id="demo" class="miniTitle removeDot fontSizeIncrease">
+                        <li>Calories 230</li>
+                        <li>Fat 11g</li>
+                        <li>Carbs 32g</li>
+                        <li>Fiber 8g</li>
+                        <li>Sugar 16g</li>
+                        <li>Protein 5g</li>
+                    </ul>
+                    <button class="button" type="button" onclick="document.getElementById('demo').style.display='none'">göm</button>
+                    <button class="button" type="button" onclick="document.getElementById('demo').style.display='list-item'">visa</button>
+                </div>
+            </main>
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            document.getElementById('btnToggle').addEventListener('click', (ev) => {
+                ev.preventDefault();
+                let main = document.querySelector('main');
+                if (main.classList.contains('bodyLaptop')){
+                    main.className = 'bodyMobile';
+                } else {
+                    main.className = 'bodyLaptop';
+                }
+            })
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .rubrik{
+        background-color: red;
+        border: 5px;
+        border-radius: 5px;
+        text-align:center;
+    }
+    .black-text{
+        color:black;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    .yellow-box{
+        background-color: yellow;
+        border:3px black solid;
+        width:50%;
+        
+    }
+    .flex-box{
+        border:3px solid limegreen;
+        border-radius: 3px;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    .bildbox{
+        background-color: purple;
+        height: 400px;
+        margin-left: 1%;
+        margin-right: 1%;
+        border: 4px solid orangered;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width:90vw;
+    }
+    .bildbox> img{
+        width:225px;
+        height:225px;
+        border: black dotted 3px;
+    }
+    body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+</style>
+<body>
+    <h1 class="rubrik">flex box</h1>
+    <div class="flex-box">
+        <p class="black-text yellow-box">text 1</p>
+        <p class="black-text yellow-box">text 2</p>
+        <p class="black-text yellow-box">text 3</p>
+    </div>
+    <div class="bildbox">
+        <img src="album2.jpg">
+        <img src="album3.jpg">
+        <img src="album4.jpg">
+    </div>
+</body>
+</html>

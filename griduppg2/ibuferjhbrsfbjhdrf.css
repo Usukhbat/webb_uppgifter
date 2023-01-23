@@ -1,0 +1,59 @@
+#gridbox{
+    display: grid;
+    grid-template-columns: 10% 90%;
+    grid-template-rows: 1fr 5fr;
+    grid-gap: 10px;
+}
+#div{
+    border: black solid 3px;
+}
+#logo{
+    width: 60%;
+}
+#header{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+#aside{
+    border: 3px solid black;
+}
+#aside> img{
+    width: 100%;
+}
+#nav{
+    display: flex;
+    flex-direction: column;
+}
+#ul{
+    background-color: black;
+    color: white;
+    text-align: center;
+    border: black solid 1px;
+    height: 100px;
+}
+#ul > a{
+    color: white;
+    margin: 0px 5% 0px;
+}
+#main{
+    background-color: black;
+    color: white;
+    border: 3px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#main > img{
+    height: auto;
+    padding-right: 5%;
+}
+#footer{
+    background-color: black;
+    text-align: center;
+    height: 100px;
+    margin: 5px 0px;
+}
+#footer > a{
+    color: white;
+}

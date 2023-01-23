@@ -1,0 +1,33 @@
+ #top{
+    background-color:#35424a;
+    color:white;
+    text-align: center;
+    border-bottom: orangered solid 3px;
+    padding:20px;
+}
+#övre{
+    background-image: url(./img/showcase.jpg);
+    color:white;
+    text-align: center;
+    border-bottom: orangered solid 3px;
+    padding:20px;
+}
+#mellan{
+    background-color:#35424a;
+    color:white;
+    text-align: center;
+    border-bottom: orangered solid 3px;
+    padding:20px;
+}
+#undre{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    padding:20px;
+}
+#sidfot{
+    background-color: orangered;
+    color:white;
+    text-align: center;
+    padding:20px;
+}

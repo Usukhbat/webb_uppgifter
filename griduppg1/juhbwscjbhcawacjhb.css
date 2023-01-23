@@ -1,0 +1,32 @@
+#gridbox{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 3fr 1fr;
+    grid-gap: 10px;
+}
+#dog{
+    height: 200px;
+    border: 3px solid black;
+}
+#footer{
+    text-align: center;
+    border: black solid 3px;
+    border-bottom: none;
+    border-right: none;
+}
+#main{
+    border: black solid 3px;
+}
+#main > article{
+    border: black solid 3px;
+    margin: 3px;
+}
+#header{
+    text-align: center;
+    border: black solid 3px;
+    border-top: none;
+    border-right: none;
+}
+#nav{
+    border: black solid 3px;
+}

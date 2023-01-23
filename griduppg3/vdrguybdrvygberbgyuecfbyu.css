@@ -1,0 +1,75 @@
+#gridbox{
+    display: grid;
+    grid-template-columns: 1fr 8fr 1fr;
+    grid-template-rows: 1fr 2fr auto 1fr;
+    grid-gap: 1px;
+    background-image: url(./img/winter_bg3.jpg);
+}
+#santa{
+    margin-right: auto;
+}
+#santa1{
+    margin-left: auto;
+}
+#header{
+    text-align: center;
+    background-color: gray;
+    border: red solid 3px;
+    color: white;
+}
+#nav{
+    grid-row-start: 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+#main{
+    grid-row-start: 3;
+    grid-column-start: 2;
+}
+#div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border: black solid 2px;
+    background-color: beige;
+    padding: 10%;
+    grid-row-start: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+.div>h1{
+    border: red solid 5px;
+    background-color: beige;
+    margin: auto;
+}
+.div> h2{
+    padding-bottom: 3px;
+    border: red solid 5px;
+    background-color: gray;
+}
+#ul{
+    background-color: gray;
+    margin: 5% auto;
+    width: 30%;
+    border: yellow solid 3px;
+    color: white;
+}
+#julafton{
+    background-color: white;
+    color: red;
+}
+#nyår{
+    background-color: yellowgreen;
+    width: 100%;
+}
+#footer{
+    grid-column-start: 2;
+    text-align: center;
+    text-decoration-style: bold;
+    font-weight: bold;
+}
+#footer>p{
+    font-weight: bolder;
+    font-size: large;
+    justify-content: top;
+}
